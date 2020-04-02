@@ -38,111 +38,99 @@ public class InterfazCalculadora extends javax.swing.JFrame {
     private void initComponents() {
 
         jTextField1 = new javax.swing.JTextField();
-        labelCalculadora = new javax.swing.JLabel();
-        textoResultado = new javax.swing.JTextField();
-        boton1 = new javax.swing.JButton();
-        boton2 = new javax.swing.JButton();
-        boton3 = new javax.swing.JButton();
-        boton4 = new javax.swing.JButton();
-        boton5 = new javax.swing.JButton();
-        boton6 = new javax.swing.JButton();
-        boton7 = new javax.swing.JButton();
-        boton8 = new javax.swing.JButton();
-        boton9 = new javax.swing.JButton();
-        boton0 = new javax.swing.JButton();
-        botonRaiz = new javax.swing.JButton();
+        Resultado = new javax.swing.JTextField();
+        btn1 = new javax.swing.JButton();
+        btn2 = new javax.swing.JButton();
+        btn3 = new javax.swing.JButton();
+        btn4 = new javax.swing.JButton();
+        btn5 = new javax.swing.JButton();
+        btn6 = new javax.swing.JButton();
+        btn7 = new javax.swing.JButton();
+        btn8 = new javax.swing.JButton();
+        btn9 = new javax.swing.JButton();
+        btn0 = new javax.swing.JButton();
         botonIgual = new javax.swing.JButton();
         botonSum = new javax.swing.JButton();
-        botonRes = new javax.swing.JButton();
-        botonMul = new javax.swing.JButton();
-        botonDiv = new javax.swing.JButton();
-        botonEncender = new javax.swing.JButton();
+        btnRes = new javax.swing.JButton();
+        btnMult = new javax.swing.JButton();
+        btnDiv = new javax.swing.JButton();
+        btnOn = new javax.swing.JButton();
         port = new javax.swing.JTextField();
-        botonLimpiar = new javax.swing.JButton();
+        btnClean = new javax.swing.JButton();
 
         jTextField1.setText("jTextField1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        labelCalculadora.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelCalculadora.setText("Calculadora");
+        Resultado.setEditable(false);
 
-        textoResultado.setEditable(false);
-
-        boton1.setText("1");
-        boton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn1.setText("1");
+        btn1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                boton1MouseClicked(evt);
+                btn1MouseClicked(evt);
             }
         });
 
-        boton2.setText("2");
-        boton2.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn2.setText("2");
+        btn2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                boton2MouseClicked(evt);
+                btn2MouseClicked(evt);
             }
         });
 
-        boton3.setText("3");
-        boton3.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn3.setText("3");
+        btn3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                boton3MouseClicked(evt);
+                btn3MouseClicked(evt);
             }
         });
 
-        boton4.setText("4");
-        boton4.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn4.setText("4");
+        btn4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                boton4MouseClicked(evt);
+                btn4MouseClicked(evt);
             }
         });
 
-        boton5.setText("5");
-        boton5.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn5.setText("5");
+        btn5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                boton5MouseClicked(evt);
+                btn5MouseClicked(evt);
             }
         });
 
-        boton6.setText("6");
-        boton6.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn6.setText("6");
+        btn6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                boton6MouseClicked(evt);
+                btn6MouseClicked(evt);
             }
         });
 
-        boton7.setText("7");
-        boton7.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn7.setText("7");
+        btn7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                boton7MouseClicked(evt);
+                btn7MouseClicked(evt);
             }
         });
 
-        boton8.setText("8");
-        boton8.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn8.setText("8");
+        btn8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                boton8MouseClicked(evt);
+                btn8MouseClicked(evt);
             }
         });
 
-        boton9.setText("9");
-        boton9.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn9.setText("9");
+        btn9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                boton9MouseClicked(evt);
+                btn9MouseClicked(evt);
             }
         });
 
-        boton0.setText("0");
-        boton0.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn0.setText("0");
+        btn0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                boton0MouseClicked(evt);
-            }
-        });
-
-        botonRaiz.setText("√");
-        botonRaiz.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                botonRaizMouseClicked(evt);
+                btn0MouseClicked(evt);
             }
         });
 
@@ -150,6 +138,11 @@ public class InterfazCalculadora extends javax.swing.JFrame {
         botonIgual.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 botonIgualMouseClicked(evt);
+            }
+        });
+        botonIgual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonIgualActionPerformed(evt);
             }
         });
 
@@ -160,38 +153,38 @@ public class InterfazCalculadora extends javax.swing.JFrame {
             }
         });
 
-        botonRes.setText("-");
-        botonRes.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnRes.setText("-");
+        btnRes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                botonResMouseClicked(evt);
+                btnResMouseClicked(evt);
             }
         });
 
-        botonMul.setText("X");
-        botonMul.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnMult.setText("X");
+        btnMult.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                botonMulMouseClicked(evt);
+                btnMultMouseClicked(evt);
             }
         });
 
-        botonDiv.setText("/");
-        botonDiv.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnDiv.setText("/");
+        btnDiv.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                botonDivMouseClicked(evt);
+                btnDivMouseClicked(evt);
             }
         });
 
-        botonEncender.setText("Encender");
-        botonEncender.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnOn.setText("Encender");
+        btnOn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                botonEncenderMouseClicked(evt);
+                btnOnMouseClicked(evt);
             }
         });
 
-        botonLimpiar.setText("Limpiar");
-        botonLimpiar.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnClean.setText("Limpiar");
+        btnClean.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                botonLimpiarMouseClicked(evt);
+                btnCleanMouseClicked(evt);
             }
         });
 
@@ -204,86 +197,79 @@ public class InterfazCalculadora extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(boton0, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(boton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(botonRaiz, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(boton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(boton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(botonIgual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(btn0, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botonRes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(botonSum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(botonIgual))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnRes, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
+                            .addComponent(botonSum, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(boton4)
+                                .addComponent(btn4)
                                 .addGap(18, 18, 18)
-                                .addComponent(boton5)
+                                .addComponent(btn5)
                                 .addGap(18, 18, 18)
-                                .addComponent(boton6)
+                                .addComponent(btn6)
                                 .addGap(18, 18, 18)
-                                .addComponent(botonMul))
+                                .addComponent(btnMult))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(boton7)
+                                .addComponent(btn7)
                                 .addGap(18, 18, 18)
-                                .addComponent(boton8)
+                                .addComponent(btn8)
                                 .addGap(18, 18, 18)
-                                .addComponent(boton9)
+                                .addComponent(btn9)
                                 .addGap(18, 18, 18)
-                                .addComponent(botonDiv)))
+                                .addComponent(btnDiv)))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(textoResultado)
+                        .addComponent(Resultado)
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(port, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(botonEncender)
-                            .addComponent(botonLimpiar))))
+                            .addComponent(btnOn)
+                            .addComponent(btnClean))))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(84, 84, 84)
-                .addComponent(labelCalculadora)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(labelCalculadora)
-                .addGap(8, 8, 8)
+                .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botonEncender, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnOn, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(textoResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(port, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botonLimpiar)
+                .addComponent(btnClean)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(boton7)
-                    .addComponent(boton8)
-                    .addComponent(boton9)
-                    .addComponent(botonDiv))
+                    .addComponent(btn7)
+                    .addComponent(btn8)
+                    .addComponent(btn9)
+                    .addComponent(btnDiv))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(boton4)
-                    .addComponent(boton5)
-                    .addComponent(boton6)
-                    .addComponent(botonMul))
+                    .addComponent(btn4)
+                    .addComponent(btn5)
+                    .addComponent(btn6)
+                    .addComponent(btnMult))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(boton1)
-                    .addComponent(boton2)
-                    .addComponent(boton3)
-                    .addComponent(botonRes))
+                    .addComponent(btn1)
+                    .addComponent(btn2)
+                    .addComponent(btn3)
+                    .addComponent(btnRes))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(boton0)
-                    .addComponent(botonRaiz)
+                    .addComponent(btn0)
                     .addComponent(botonIgual)
                     .addComponent(botonSum))
                 .addGap(19, 19, 19))
@@ -292,77 +278,71 @@ public class InterfazCalculadora extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void boton0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton0MouseClicked
+    private void btn0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn0MouseClicked
        
         cadena = cadena + 0;
-        textoResultado.setText(cadena);
-    }//GEN-LAST:event_boton0MouseClicked
+        Resultado.setText(cadena);
+    }//GEN-LAST:event_btn0MouseClicked
 
-    private void boton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton1MouseClicked
+    private void btn1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn1MouseClicked
         
         cadena = cadena + 1;
-        textoResultado.setText(cadena);
+        Resultado.setText(cadena);
         System.out.println(cadena);
-    }//GEN-LAST:event_boton1MouseClicked
+    }//GEN-LAST:event_btn1MouseClicked
 
-    private void boton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton2MouseClicked
+    private void btn2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn2MouseClicked
        
         cadena = cadena + 2;
-        textoResultado.setText(cadena);
-    }//GEN-LAST:event_boton2MouseClicked
+        Resultado.setText(cadena);
+    }//GEN-LAST:event_btn2MouseClicked
 
-    private void boton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton3MouseClicked
+    private void btn3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn3MouseClicked
       
         cadena = cadena + 3;
-        textoResultado.setText(cadena);
-    }//GEN-LAST:event_boton3MouseClicked
+        Resultado.setText(cadena);
+    }//GEN-LAST:event_btn3MouseClicked
 
-    private void boton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton4MouseClicked
+    private void btn4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn4MouseClicked
       
         cadena = cadena + 4;
-        textoResultado.setText(cadena);
-    }//GEN-LAST:event_boton4MouseClicked
+        Resultado.setText(cadena);
+    }//GEN-LAST:event_btn4MouseClicked
 
-    private void boton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton5MouseClicked
+    private void btn5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn5MouseClicked
        
         cadena = cadena + 5;
-        textoResultado.setText(cadena);
-    }//GEN-LAST:event_boton5MouseClicked
+        Resultado.setText(cadena);
+    }//GEN-LAST:event_btn5MouseClicked
 
-    private void boton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton6MouseClicked
+    private void btn6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn6MouseClicked
 
         cadena = cadena + 6;
-        textoResultado.setText(cadena);
-    }//GEN-LAST:event_boton6MouseClicked
+        Resultado.setText(cadena);
+    }//GEN-LAST:event_btn6MouseClicked
 
-    private void boton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton7MouseClicked
+    private void btn7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn7MouseClicked
      
         cadena = cadena + 7;
-        textoResultado.setText(cadena);
-    }//GEN-LAST:event_boton7MouseClicked
+        Resultado.setText(cadena);
+    }//GEN-LAST:event_btn7MouseClicked
 
-    private void boton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton8MouseClicked
+    private void btn8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn8MouseClicked
      
         cadena = cadena + 8;
-        textoResultado.setText(cadena);
-    }//GEN-LAST:event_boton8MouseClicked
+        Resultado.setText(cadena);
+    }//GEN-LAST:event_btn8MouseClicked
 
-    private void boton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton9MouseClicked
-      
-        textoResultado.setText(cadena);
-    }//GEN-LAST:event_boton9MouseClicked
-
-    private void botonRaizMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonRaizMouseClicked
-      
-        cadena = cadena + ".";
-
-    }//GEN-LAST:event_botonRaizMouseClicked
+    private void btn9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn9MouseClicked
+        cadena = cadena + 9;
+        Resultado.setText(cadena);
+    }//GEN-LAST:event_btn9MouseClicked
 
     private void botonIgualMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonIgualMouseClicked
        
         cadena = cadena + " ";
         System.out.println("Cadena en la Interfaz: " + cadena);
-        MC.enviarMensaje(cadena, textoResultado);
+        MC.enviarMensaje(cadena, Resultado);
        
 
     }//GEN-LAST:event_botonIgualMouseClicked
@@ -370,60 +350,64 @@ public class InterfazCalculadora extends javax.swing.JFrame {
     private void botonSumMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonSumMouseClicked
       
         cadena = cadena + " + ";
-        textoResultado.setText(cadena);
+        Resultado.setText(cadena);
         System.out.println(cadena);
     }//GEN-LAST:event_botonSumMouseClicked
 
-    private void botonResMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonResMouseClicked
+    private void btnResMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnResMouseClicked
      
         cadena = cadena + " - ";
-        textoResultado.setText(cadena);
-    }//GEN-LAST:event_botonResMouseClicked
+        Resultado.setText(cadena);
+    }//GEN-LAST:event_btnResMouseClicked
 
-    private void botonMulMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonMulMouseClicked
+    private void btnMultMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMultMouseClicked
        
         cadena = cadena + " * ";
-        textoResultado.setText(cadena);
-    }//GEN-LAST:event_botonMulMouseClicked
+        Resultado.setText(cadena);
+    }//GEN-LAST:event_btnMultMouseClicked
 
-    private void botonDivMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonDivMouseClicked
+    private void btnDivMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDivMouseClicked
       
         cadena = cadena + " / ";
-        textoResultado.setText(cadena);
-    }//GEN-LAST:event_botonDivMouseClicked
+        Resultado.setText(cadena);
+    }//GEN-LAST:event_btnDivMouseClicked
 
-    private void botonEncenderMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonEncenderMouseClicked
+    private void btnOnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOnMouseClicked
         try {
           
-            MC.crearConexion(port, botonEncender, textoResultado);
+            MC.crearConexion(port, btnOn, Resultado);
           
-            boton0.setEnabled(true);
-            boton1.setEnabled(true);
-            boton2.setEnabled(true);
-            boton3.setEnabled(true);
-            boton4.setEnabled(true);
-            boton5.setEnabled(true);
-            boton6.setEnabled(true);
-            boton7.setEnabled(true);
-            boton8.setEnabled(true);
-            boton9.setEnabled(true);
+            btn0.setEnabled(true);
+            btn1.setEnabled(true);
+            btn2.setEnabled(true);
+            btn3.setEnabled(true);
+            btn4.setEnabled(true);
+            btn5.setEnabled(true);
+            btn6.setEnabled(true);
+            btn7.setEnabled(true);
+            btn8.setEnabled(true);
+            btn9.setEnabled(true);
             botonSum.setEnabled(true);
-            botonRes.setEnabled(true);
-            botonMul.setEnabled(true);
-            botonDiv.setEnabled(true);
+            btnRes.setEnabled(true);
+            btnMult.setEnabled(true);
+            btnDiv.setEnabled(true);
             botonIgual.setEnabled(true);
-            textoResultado.setEnabled(true);
+            Resultado.setEnabled(true);
            
-            textoResultado.setEditable(false);
+            Resultado.setEditable(false);
         } catch (IOException ex) {
             Logger.getLogger(InterfazCalculadora.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_botonEncenderMouseClicked
+    }//GEN-LAST:event_btnOnMouseClicked
 
-    private void botonLimpiarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonLimpiarMouseClicked
+    private void btnCleanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCleanMouseClicked
         cadena = "";
-        textoResultado.setText(cadena);
-    }//GEN-LAST:event_botonLimpiarMouseClicked
+        Resultado.setText(cadena);
+    }//GEN-LAST:event_btnCleanMouseClicked
+
+    private void botonIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonIgualActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonIgualActionPerformed
 
     /**
      * @param args the command line arguments
@@ -461,28 +445,26 @@ public class InterfazCalculadora extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton boton0;
-    private javax.swing.JButton boton1;
-    private javax.swing.JButton boton2;
-    private javax.swing.JButton boton3;
-    private javax.swing.JButton boton4;
-    private javax.swing.JButton boton5;
-    private javax.swing.JButton boton6;
-    private javax.swing.JButton boton7;
-    private javax.swing.JButton boton8;
-    private javax.swing.JButton boton9;
-    private javax.swing.JButton botonDiv;
-    private javax.swing.JButton botonEncender;
+    private javax.swing.JTextField Resultado;
     private javax.swing.JButton botonIgual;
-    private javax.swing.JButton botonLimpiar;
-    private javax.swing.JButton botonMul;
-    private javax.swing.JButton botonRaiz;
-    private javax.swing.JButton botonRes;
     private javax.swing.JButton botonSum;
+    private javax.swing.JButton btn0;
+    private javax.swing.JButton btn1;
+    private javax.swing.JButton btn2;
+    private javax.swing.JButton btn3;
+    private javax.swing.JButton btn4;
+    private javax.swing.JButton btn5;
+    private javax.swing.JButton btn6;
+    private javax.swing.JButton btn7;
+    private javax.swing.JButton btn8;
+    private javax.swing.JButton btn9;
+    private javax.swing.JButton btnClean;
+    private javax.swing.JButton btnDiv;
+    private javax.swing.JButton btnMult;
+    private javax.swing.JButton btnOn;
+    private javax.swing.JButton btnRes;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JLabel labelCalculadora;
     private javax.swing.JTextField port;
-    private javax.swing.JTextField textoResultado;
     // End of variables declaration//GEN-END:variables
 String cadena = "";
 
@@ -495,25 +477,23 @@ String cadena = "";
     }
 
     public InterfazCalculadora(JButton BotonServerON, JButton boton0, JButton boton1, JButton boton2, JButton boton3, JButton boton4, JButton boton5, JButton boton6, JButton boton7, JButton boton8, JButton boton9, JButton botonComa, JButton botonDiv, JButton botonIgual, JButton botonMul, JButton botonRes, JButton botonSum, JLabel labelCalculadora, JTextField textoResultado) throws HeadlessException {
-        this.botonEncender = BotonServerON;
-        this.boton0 = boton0;
-        this.boton1 = boton1;
-        this.boton2 = boton2;
-        this.boton3 = boton3;
-        this.boton4 = boton4;
-        this.boton5 = boton5;
-        this.boton6 = boton6;
-        this.boton7 = boton7;
-        this.boton8 = boton8;
-        this.boton9 = boton9;
-        this.botonRaiz = botonComa;
-        this.botonDiv = botonDiv;
+        this.btnOn = BotonServerON;
+        this.btn0 = boton0;
+        this.btn1 = boton1;
+        this.btn2 = boton2;
+        this.btn3 = boton3;
+        this.btn4 = boton4;
+        this.btn5 = boton5;
+        this.btn6 = boton6;
+        this.btn7 = boton7;
+        this.btn8 = boton8;
+        this.btn9 = boton9;
+        this.btnDiv = botonDiv;
         this.botonIgual = botonIgual;
-        this.botonMul = botonMul;
-        this.botonRes = botonRes;
+        this.btnMult = botonMul;
+        this.btnRes = botonRes;
         this.botonSum = botonSum;
-        this.labelCalculadora = labelCalculadora;
-        this.textoResultado = textoResultado;
+        this.Resultado = textoResultado;
     }
 
 }

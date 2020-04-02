@@ -21,9 +21,10 @@ public class MetodosCliente {
     public void crearConexion(JTextField port, JButton boton, JTextField field) throws IOException {
         clienteSocket = new Socket();
         // Se crea el socket del cliente:
-        System.out.println("Creando socket cliente");
-        // Se estable la dirección del socket:
-        System.out.println("Estableciendo la conexión");
+        System.out.println("Creando socket");
+        
+// Se estable la dirección del socket:
+        System.out.println("Connected");
         conn = Integer.parseInt(port.getText());
         InetSocketAddress addr = new InetSocketAddress("localhost", conn);
         clienteSocket.connect(addr);
@@ -45,7 +46,7 @@ public class MetodosCliente {
 
    
     public void enviarMensaje(String mensaje, JTextField resultado) {
-        String result = "0";
+        String resul = "0";
         try {
             //Conectamos
             connect();
@@ -53,7 +54,7 @@ public class MetodosCliente {
             OutputStream os = clienteSocket.getOutputStream();
             //Escribimos el mensaje
             os.write(mensaje.getBytes());
-            System.out.println("Mensaje enviado.");
+            System.out.println("Mensaje");
 
           
             InputStream is = clienteSocket.getInputStream();
@@ -62,9 +63,9 @@ public class MetodosCliente {
            
             is.read(mensajeRecibido);
            
-            resultado.setText(String.format("%.2f", Float.parseFloat(new String(mensajeRecibido))));
+            resultado.setText(String.format("%.2f",Float.parseFloat(new String(mensajeRecibido))));
            
-            System.out.println("Mensaje recibido: " + new String(mensajeRecibido));
+            System.out.println("Mensaje " + new String(mensajeRecibido));
            
             is.close();
             os.close();
@@ -78,9 +79,9 @@ public class MetodosCliente {
     public void cerrarConexion() {
         try {
             //Cerramos el socket
-            System.out.println("Cerrando el socket cliente");
+            System.out.println("Cerrando el socket");
             clienteSocket.close();
-            System.out.println("Terminado");
+            
         } catch (IOException ex) {
             System.out.println("Error conexión");
         }

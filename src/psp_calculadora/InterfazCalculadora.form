@@ -35,106 +35,98 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="boton0" alignment="0" max="32767" attributes="0"/>
-                          <Component id="boton1" alignment="0" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="botonRaiz" max="32767" attributes="0"/>
-                          <Component id="boton2" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="boton3" max="32767" attributes="0"/>
-                          <Component id="botonIgual" max="32767" attributes="0"/>
+                          <Component id="btn0" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btn1" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="botonRes" max="32767" attributes="0"/>
-                          <Component id="botonSum" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="btn2" min="-2" pref="41" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btn3" min="-2" pref="41" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="botonIgual" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnRes" pref="53" max="32767" attributes="0"/>
+                          <Component id="botonSum" alignment="1" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="boton4" min="-2" max="-2" attributes="0"/>
+                              <Component id="btn4" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="boton5" min="-2" max="-2" attributes="0"/>
+                              <Component id="btn5" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="boton6" min="-2" max="-2" attributes="0"/>
+                              <Component id="btn6" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="botonMul" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnMult" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="boton7" min="-2" max="-2" attributes="0"/>
+                              <Component id="btn7" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="boton8" min="-2" max="-2" attributes="0"/>
+                              <Component id="btn8" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="boton9" min="-2" max="-2" attributes="0"/>
+                              <Component id="btn9" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="botonDiv" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnDiv" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="textoResultado" max="32767" attributes="0"/>
+                      <Component id="Resultado" max="32767" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="port" min="-2" pref="80" max="-2" attributes="0"/>
-                          <Component id="botonEncender" min="-2" max="-2" attributes="0"/>
-                          <Component id="botonLimpiar" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnOn" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnClean" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-              <Component id="labelCalculadora" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="labelCalculadora" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="botonEncender" min="-2" pref="13" max="-2" attributes="0"/>
+                  <Component id="btnOn" min="-2" pref="13" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="textoResultado" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
+                      <Component id="Resultado" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
                       <Component id="port" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="botonLimpiar" min="-2" max="-2" attributes="0"/>
+              <Component id="btnClean" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="31" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="boton7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="boton8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="boton9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="botonDiv" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn8" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnDiv" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="boton4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="boton5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="boton6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="botonMul" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnMult" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="boton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="boton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="boton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="botonRes" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnRes" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="boton0" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="botonRaiz" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn0" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="botonIgual" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="botonSum" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
@@ -144,103 +136,89 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="labelCalculadora">
-      <Properties>
-        <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Calculadora"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="textoResultado">
+    <Component class="javax.swing.JTextField" name="Resultado">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="boton1">
+    <Component class="javax.swing.JButton" name="btn1">
       <Properties>
         <Property name="text" type="java.lang.String" value="1"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="boton1MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn1MouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton2">
+    <Component class="javax.swing.JButton" name="btn2">
       <Properties>
         <Property name="text" type="java.lang.String" value="2"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="boton2MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn2MouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton3">
+    <Component class="javax.swing.JButton" name="btn3">
       <Properties>
         <Property name="text" type="java.lang.String" value="3"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="boton3MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn3MouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton4">
+    <Component class="javax.swing.JButton" name="btn4">
       <Properties>
         <Property name="text" type="java.lang.String" value="4"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="boton4MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn4MouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton5">
+    <Component class="javax.swing.JButton" name="btn5">
       <Properties>
         <Property name="text" type="java.lang.String" value="5"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="boton5MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn5MouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton6">
+    <Component class="javax.swing.JButton" name="btn6">
       <Properties>
         <Property name="text" type="java.lang.String" value="6"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="boton6MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn6MouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton7">
+    <Component class="javax.swing.JButton" name="btn7">
       <Properties>
         <Property name="text" type="java.lang.String" value="7"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="boton7MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn7MouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton8">
+    <Component class="javax.swing.JButton" name="btn8">
       <Properties>
         <Property name="text" type="java.lang.String" value="8"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="boton8MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn8MouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton9">
+    <Component class="javax.swing.JButton" name="btn9">
       <Properties>
         <Property name="text" type="java.lang.String" value="9"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="boton9MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn9MouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton0">
+    <Component class="javax.swing.JButton" name="btn0">
       <Properties>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="boton0MouseClicked"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="botonRaiz">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="&#x221a;"/>
-      </Properties>
-      <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonRaizMouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn0MouseClicked"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="botonIgual">
@@ -249,6 +227,7 @@
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonIgualMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonIgualActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="botonSum">
@@ -259,46 +238,46 @@
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonSumMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="botonRes">
+    <Component class="javax.swing.JButton" name="btnRes">
       <Properties>
         <Property name="text" type="java.lang.String" value="-"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonResMouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnResMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="botonMul">
+    <Component class="javax.swing.JButton" name="btnMult">
       <Properties>
         <Property name="text" type="java.lang.String" value="X"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonMulMouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMultMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="botonDiv">
+    <Component class="javax.swing.JButton" name="btnDiv">
       <Properties>
         <Property name="text" type="java.lang.String" value="/"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonDivMouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnDivMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="botonEncender">
+    <Component class="javax.swing.JButton" name="btnOn">
       <Properties>
         <Property name="text" type="java.lang.String" value="Encender"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonEncenderMouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnOnMouseClicked"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="port">
     </Component>
-    <Component class="javax.swing.JButton" name="botonLimpiar">
+    <Component class="javax.swing.JButton" name="btnClean">
       <Properties>
         <Property name="text" type="java.lang.String" value="Limpiar"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonLimpiarMouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnCleanMouseClicked"/>
       </Events>
     </Component>
   </SubComponents>
